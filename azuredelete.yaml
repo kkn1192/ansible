@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+  - name: delete resource group
+    azure_rm_resourcegroup:
+      name: trainee5
+      state: absent

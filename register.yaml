@@ -1,0 +1,9 @@
+---
+- hosts: linux
+  tasks: 
+  - name: print command output
+    command : 
+      echo "I am testing ansible register"
+    register: log
+  - debug: msg="standard output={{log.stdout}}"
+  - debug: msg="standard error={{log.stderr}}" 

@@ -1,0 +1,5 @@
+---
+- hosts: centOS
+  become: yes
+  roles:
+    - webserver
